@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script src="https://app.phasetwo.io/auth/js/keycloak.js"></script>
+    <script>
+      var auth = new Keycloak({
+        url: 'https://euc1.auth.ac/auth/',
+        realm: 'scadi',
+        clientId: 'scadi-demo'
+      });
+      auth.init({
+        onLoad: 'login-required'
+      }).then(function(authenticated) {
+        alert(authenticated ? 'authenticated' : 'not authenticated');
+      }).catch(function() {
+        alert('failed to initialize');
+      });
+    </script>
+  </head>
+  <body>
+    <div id="message"></div>
+  </body>
+</html>

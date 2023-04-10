@@ -5,11 +5,7 @@ import { ReactKeycloakProvider } from "@react-keycloak/web";
 
 import App from "./App";
 
-const keycloak = new Keycloak({
-    clientId: "refine-demo",
-    url: "https://lemur-0.cloud-iam.com/auth",
-    realm: "refine",
-});
+const keycloak = new Keycloak();
 
 const container = document.getElementById("root");
 // eslint-disable-next-line

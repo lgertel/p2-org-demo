@@ -1,0 +1,10 @@
+{
+  "realm": "scadi",
+  "auth-servedr-url": "https://euc1.auth.ac/auth/",
+  "ssl-required": "external",
+  "resource": "scadi-demo",
+  "credentials": {
+    "secret": "rqhe9v8taTdFhjykjYSLjzuGsw1nYjm9"
+  },
+  "confidential-port": 0
+}
